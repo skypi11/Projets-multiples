@@ -1,0 +1,251 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --open: "open sans", sans-serif;
+  --marker: "permanent marker", sans-serif;
+  --roboto: "roboto", sans-serif;
+  --green-blue: #02797e;
+  --green: #006a19;
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #f2f4f2;
+}
+
+/* general */
+* {
+  font-family: var(--open);
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1420px;
+  margin: auto;
+  margin-top: 15px;
+  gap: 15px;
+}
+header img {
+  width: 200px;
+}
+header ul {
+  padding: 0;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+header ul li {
+  list-style: none;
+  padding: 15px;
+}
+header ul a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 5px;
+  font-family: var(--roboto);
+  font-weight: 600;
+}
+
+/* main */
+main .About-us {
+  background-color: var(--grey);
+}
+main .About-us .bof {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  align-items: center;
+}
+main .About-us .bof article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .About-us .bof article h1 {
+  display: flex;
+  align-items: center;
+  font-family: var(--marker);
+  color: var(--green);
+  margin: 35px 0 35px;
+}
+main .About-us .bof article h1::before {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--green);
+  margin-right: 25px;
+}
+main .About-us .bof article div a {
+  padding: 15px 30px;
+  background-color: var(--green);
+  display: inline-block;
+  color: var(--white);
+  font-family: var(--roboto);
+  border-radius: 6px;
+  margin-top: 30px;
+}
+main .About-us .bof img {
+  width: 700px;
+}
+main .skills {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+  justify-content: center;
+  flex-direction: column;
+}
+main .skills .title2 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+main .skills .title2 h1 {
+  display: flex;
+  align-items: center;
+  font-family: var(--marker);
+  color: var(--green);
+  margin: 35px 0 35px;
+}
+main .skills .title2 h1::before {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--green);
+  margin-right: 25px;
+}
+main .skills .title2 h1::after {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--green);
+  margin-left: 25px;
+}
+main .skills .skillsArticle {
+  display: flex;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+main .skills .skillsArticle article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 50px;
+  gap: 20px;
+}
+main .skills .skillsArticle article img {
+  width: 80px;
+}
+main .skills .skillsArticle article h2 {
+  font-family: var(--marker);
+  color: var(--green-blue);
+  font-weight: 400;
+}
+main .skills .skillsArticle article:nth-child(2) {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: var(--green-blue);
+}
+main .skills .skillsArticle article:nth-child(3) {
+  border-right: 2px solid;
+  border-color: var(--green-blue);
+}
+main .ourClients {
+  background-color: var(--green-blue);
+  
+}
+.test {
+    display: flex;
+  margin: auto;
+  max-width: 1440px;
+  padding-top: 100px;
+  flex-direction: column;
+}
+main .ourClients .title3 h1 {
+  color: white;
+  font-family: var(--marker);
+  display: flex;
+}
+.title3{
+    display: flex;
+}
+.title3 h1::before {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--white);
+  margin-right: 25px;
+}
+.test article{
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.test article img{
+    width: 176px;
+    object-fit: contain;
+}
+.ourProjects {
+  display: flex;
+  margin: auto;
+  max-width: 1440px;
+  justify-content: center;
+  flex-direction: column;
+}
+.ourProjects .title4 {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.ourProjects .title4 h1 {
+  display: flex;
+  align-items: center;
+  font-family: var(--marker);
+  color: var(--green);
+  margin: 35px 0 35px;
+}
+.ourProjects .title4 h1::before {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--green);
+  margin-right: 25px;
+}
+.ourProjects .title4 h1::after {
+  content: "";
+  flex: block;
+  width: 80px;
+  height: 2px;
+  background: var(--green);
+  margin-left: 25px;
+}
+.ourProjects article{
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
+    gap: 30px;
+}
+.ourProjects article img{
+    width: 460px;
+    height: 303px;
+    object-fit: cover;
+}
